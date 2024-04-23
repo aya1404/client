@@ -6,7 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import axios from "axios"
 
-axios.defaults.baseURL="http://localhost:5000/contact"
+//axios.defaults.baseURL="http://localhost:5000/contact"
+axios.defaults.baseURL="https://brh-studio-api.onrender.com"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
