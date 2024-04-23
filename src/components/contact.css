@@ -1,0 +1,81 @@
+:root {
+	--green-30: #d6cf90;
+	--green-50: #d1c342;
+	--green-70: #9F9006;
+	--green-90: #796D00;
+	--brown-5: #F0EFEB;
+	--brown-10: #e7dad2;
+	--brown-20: #D4B986;
+	--brown-30: #c09d56;
+	--brown-60: #996500;
+	--brown-80: #724C01;
+	--brown-100: #633c0a;
+}
+
+.persuader {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  background: var(--brown-5);
+  min-height: 95vh;
+  padding: 2rem 1rem 1rem;
+}
+.contact{
+  width: 30rem;
+  padding-left: 2rem ;
+  display: flex;
+  flex-direction: column;
+}
+.contact .contact-content h1 {
+	font-family: "Prata";
+	font-size: clamp(2rem, 2vw, 3rem);
+	color: var(--brown-60);
+  }
+.contact .contact-content{
+  font-style: italic;
+  font-family: Playfair Display, serif;
+  font-size: clamp(1rem, 2vw, 2rem);
+  margin: 1rem 0 3rem;
+  line-height: 1.2;
+}
+.contact .contact-content button{
+	align-self: center;
+	text-transform: uppercase;
+	background: var(--green-70);
+	color: var(--brown-10);
+	padding: 0.8rem 2rem;
+	border: none;
+	border-radius: 10px;
+	font-family: "Prata", serif;
+	font-size: 1.2rem;
+	cursor: pointer;
+	position: relative;
+}
+.contact .contact-content button:hover{
+	background: var(--brown-60);
+}
+.form{
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 3rem 3rem;
+}
+.form label {
+  display: block; /* Display labels as block elements */
+  margin-bottom: 8px; /* Add spacing below labels */
+  font-size: 1.5rem; /* Set the font size for labels */
+  font-family: "Architects Daughter", cursive;
+  color: var(--green-70); /* Set text color */
+}
+.form input,
+.form select {
+    display: block; /* Display inputs and textarea as block elements */
+    width: 90%; /* Set the width to 100% of the container */
+    padding: 10px; /* Add padding inside inputs and textarea */
+    margin-bottom: 10px; /* Add spacing below inputs and textarea */
+    border: 1px solid var(--brown-60); /* Add a 1px border with light gray color */
+    border-radius: 10px; /* Round the corners of inputs and textarea */
+    background-color: var(--brown-5);
+    font-size: 1rem; /* Set the font size */
+}

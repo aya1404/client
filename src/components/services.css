@@ -1,0 +1,81 @@
+:root {
+	--green-30: #d6cf90;
+	--green-50: #d1c342;
+	--green-70: #9F9006;
+	--green-90: #796D00;
+	--brown-5: #F0EFEB;
+	--brown-10: #e7dad2;
+	--brown-20: #D4B986;
+	--brown-30: #c09d56;
+	--brown-60: #996500;
+	--brown-80: #724C01;
+	--brown-100: #633c0a;
+}
+
+.services {
+  min-height: 100vh;
+  position: relative;
+  padding: 1rem;
+  margin: 1rem;
+}
+.services h2{
+  font-family: "Prata";
+  font-size: 4rem;
+  color: var(--green-70);
+  line-height: 0;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.services__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  min-height: 90vh;
+  padding: 0 4rem;
+}
+.services__item__photo {
+  margin: 1rem;
+}
+.services__item img {
+  width: 400px;
+  padding: 1rem;
+}
+.services__item__info {
+  font-family: "Prata";
+}
+.services__item__info .inner {
+  padding: 1rem;
+}
+.services__item__info p {
+  font-family: "Prata";
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.services__item__info h5 {
+  font-size: 2.2rem;
+  margin: 2.5rem 0;
+  color: var(--brown-60);
+}
+.services__item__cta {
+  text-transform: uppercase;
+  background: var(--green-70);
+  color: var(--brown-10);
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-family: "Prata", serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+.services__item__cta:hover{
+  background: var(--brown-30);
+}
+.services__item:nth-child(3){
+  background-color: var(--brown-10);
+}
+.services__item:nth-child(3) img{
+  width: 500px;
+}

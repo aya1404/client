@@ -1,0 +1,269 @@
+:root {
+	--green-30: #d6cf90;
+	--green-50: #d1c342;
+	--green-70: #9F9006;
+	--green-90: #796D00;
+	--brown-5: #F0EFEB;
+	--brown-10: #e7dad2;
+	--brown-20: #D4B986;
+	--brown-30: #c09d56;
+	--brown-60: #996500;
+	--brown-80: #724C01;
+	--brown-100: #633c0a;
+}
+
+/* hero section...............................................................................*/
+.hero{
+  min-height: 100vh;
+  background: url("../images/hero-bg.jpeg") no-repeat center bottom/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 3rem 1rem 1rem;
+  color: var(--brown-10);
+  text-align: center;
+}
+.hero p{
+  font-style: italic;
+  font-family: Playfair Display, serif;
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  margin: 1rem 0 3rem;
+  line-height: 1.2;
+}
+.hero h2 {
+    font-family: "Prata";
+    font-size: clamp(2rem, 2vw, 3rem);
+    color: var(--brown-10);
+    line-height: 0px;
+  }
+.hero h1 {
+  font-family: "Prata";
+  font-size: clamp(5rem, 8vw, 8rem);
+  color: var(--green-50);
+  line-height: 0;
+  letter-spacing: 4px;
+}
+.hero button {
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  background: var(--brown-80);
+  color: var(--brown-10);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-family: "Prata", serif;
+  letter-spacing: 0.05rem;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s ease;
+  box-shadow: 0 0 0 2px var(--brown-60), 0 0 0 5px var(--brown-30);
+}
+.hero button:hover {
+  background: var(--brown-60);
+  box-shadow: 0 0 0 2px var(--brown-30), 0 0 0 5px var(--brown-80);
+}
+.hero button:focus, .hero button:active {
+  background: var(--brown-30);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--brown-60), 0 0 0 5px var(--brown-80);
+}
+
+/*services section ...............................................................................*/
+.services{
+  margin: 2rem;
+}
+.services h1{
+  font-family: "Prata";
+  font-size: 4rem;
+  color: var(--green-70);
+  line-height: 0;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.services .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  padding: 10px;
+}
+
+.services .cards .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: min(95%, 300px);
+  height: 550px;
+  padding: 20px;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+.services .cards .card img{
+  width: 280px;
+  height: 380px;
+  padding: 0 10px;
+  border-radius: 10px;
+}
+.services .cards .card h2{
+  font-family: Playfair Display, serif;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+.services .cards .card p{
+  font-family: "Architects Daughter" ,cursive;
+  text-align: center;
+}
+.services .cards .card button{
+  align-self: center;
+  text-transform: uppercase;
+  background: var(--green-70);
+  color: var(--brown-10);
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-family: "Prata", serif;
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: relative;
+}
+.services .cards .card button:hover{
+  background: var(--brown-30);
+}
+/* portfolio section.......................................................................................*/
+.portfolio{
+  margin: 2rem;
+  padding-top: 2rem;
+}
+.portfolio h1{
+  font-family: "Prata";
+  font-size: 4rem;
+  color: var(--green-70);
+  line-height: 0;
+  letter-spacing: 4px;
+  text-align: center;
+}
+.portfolio-content{
+  background: var(--brown-5);
+  font-family: "Fira Sans", sans-serif;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+.gallery {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  max-width: 1300px;
+  margin: auto;
+}
+.gallery__strip {
+  min-height: 100vh;
+}
+.gallery__strip__wrapper {
+  flex: 0 0 100%;
+  justify-content: flex-end;
+  background: var(--brown-5);
+  border-right: 2px solid #333;
+  position: relative;
+}
+
+@media (min-width: 500px) {
+  .gallery__strip__wrapper {
+    flex: 0 0 50%;
+  }
+}
+@media (min-width: 950px) {
+  .gallery {
+    height: 100vh;
+  }
+  .gallery__strip.one {
+    animation: 60s move-it ease alternate infinite 5s;
+    transform: translateY(2%);
+  }
+  .gallery__strip.three {
+    animation: 70s move-it ease alternate infinite 6s;
+    transform: translateY(2%);
+  }
+  .gallery__strip.two {
+    animation: 58s move-it-2 ease alternate infinite 5s;
+    transform: translateY(-50%);
+  }
+  .gallery__strip.four {
+    animation: 65s move-it-2 ease alternate infinite 5.5s;
+    transform: translateY(-50%);
+  }
+  .gallery__strip:hover {
+    animation-play-state: paused;
+  }
+  .gallery__strip__wrapper {
+    flex: 0 0 25%;
+  }
+}
+.photo {
+  position: relative;
+  text-align: right;
+  padding-bottom: 3rem;
+}
+.photo__image img {
+  height: 250px;
+  width: 90%;
+  transform: translateX(30%);
+  transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+}
+.photo:hover .photo__image img {
+  transform: translateX(0%);
+}
+
+@keyframes move-it {
+  0%, 90%, 100% {
+    transform: translateY(2%);
+  }
+  45% {
+    transform: translateY(-50%);
+  }
+}
+@keyframes move-it-2 {
+  0%, 90%, 100% {
+    transform: translateY(-50%);
+  }
+  45% {
+    transform: translateY(5%);
+  }
+}
+
+/* about section..................................................................................*/
+.about{
+  margin: 2rem;
+  padding: 1rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.about h1{
+  font-size: 2.5rem;
+  font-family: "Architects Daughter" ,cursive;
+}
+.about span{
+  color: var(--green-70);
+}
+.about img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.about h2{
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  font-family: Playfair Display, serif;
+  color: var(--brown-100);
+}
+.about p{
+  font-style: italic;
+  font-family: Playfair Display, serif;
+  font-size: 1.5rem;
+  line-height: 0;
+}
