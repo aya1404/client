@@ -1,0 +1,49 @@
+/* Footer section............................................*/
+.footer {
+    background-color: var(--green-50); /* Set background color for the footer */
+    color: #fff; /* Set text color to white */
+    text-align: center; /* Center-align text within the footer */
+    padding: 20px 0; /* Add padding to the top and bottom of the footer */
+    bottom: 0;
+  }
+  
+  .footer p {
+    margin: 0; /* Remove default margin for paragraphs */
+    font-size: 1rem; /* Set the font size for footer text */
+  }
+  .fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  }
+  .fa:hover {
+  opacity: 0.7;
+  }
+  .social li {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 20px;
+  font-family: "Architects Daughter" ,cursive;
+  }
+  #demo1 li a {
+  transition: transform 0.4s linear;
+  }
+  #demo1 li:hover a {
+  transform: scale(0.7);
+  }
+  .fa-facebook {
+  background: #3B5998;
+  color: white;
+  }
+  .fa-instagram {
+  background: linear-gradient(to top right, rgb(238, 255, 0),red, rgb(248, 1, 137), purple);
+  color: white;
+  }
+  .fa-envelope {
+    background: #b30909;
+    color: white;
+  }
